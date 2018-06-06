@@ -44,26 +44,28 @@ router.post('/', upload.single('image'), (req, res, next) => {
       function (err, ticket) {
           if (err) return res.status(500).send("There was a problem adding the ticket to the database.");
           res.status(200).send(ticket);
-          // create email
-          var mailOptions = {
-            from: 'csoreportingapp@gmail.com',
-            to: 'hoernsbj@mail.uc.edu',
-            subject: 'CSO Trouble Ticket: ' + req.body.category + ' at ' + req.body.location,
-            text: 'That was easy!',
-            html: 'Issue description: ' + req.body.description + '<br><br> <img src="cid:unique@kreata.ee"/>',
-            attachments: [{
-                filename: 'image.jpg',
-                path: './public/images/uploads/' + req.file.filename,
-                cid: 'unique@kreata.ee' // same cid value as in the html img src
-            }]
-          };
-          transporter.sendMail(mailOptions, function(error, info){
-            if (error) {
-              console.log(error);
-            } else {
-              console.log('Email sent: ' + info.response);
-            }
-          });
+          // create email, route to appropriate party
+          if (req.body.location == 'CRC') {
+            var mailOptions = {
+              from: 'csoreportingapp@gmail.com',
+              to: 'hoernsbj@mail.uc.edu',
+              subject: 'CSO Trouble Ticket: ' + req.body.category + ' at ' + req.body.location,
+              text: 'That was easy!',
+              html: 'Issue description: ' + req.body.description + '<br><br> <img src="cid:unique@kreata.ee"/>',
+              attachments: [{
+                  filename: 'image.jpg',
+                  path: './public/images/uploads/' + req.file.filename,
+                  cid: 'unique@kreata.ee' // same cid value as in the html img src
+              }]
+            };
+            transporter.sendMail(mailOptions, function(error, info){
+              if (error) {
+                console.log(error);
+              } else {
+                console.log('Email sent: ' + info.response);
+              }
+            });
+          }
       });
 });
 
