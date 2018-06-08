@@ -1,0 +1,42 @@
+<!-- views/tickets.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+  </style>
+</head>
+<body class="container">
+
+<header>
+
+</header>
+
+<main>
+    <div class="list">
+      <table style="width:100%">
+        <tr>
+          <th>Location</th>
+          <th>Category</th>
+          <th>Description</th>
+        </tr>
+      <% tickets.forEach(function (ticket) { %>
+          <tr>
+            <td> <%= ticket.location %> </td>
+            <td> <%= ticket.category %> </td>
+            <td> <%= ticket.description %> </td>
+          </tr>
+      <% }) %>
+      </table>
+    </div>
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
