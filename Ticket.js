@@ -2,7 +2,7 @@
 var mongoose = require('mongoose');
 var TicketSchema = new mongoose.Schema({
   location: String,
-  category: String,
+  department: String,
   description: String,
   imagePath: String
 });

@@ -3,11 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-    table, th, td {
-        border: 1px solid black;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body class="container">
 
@@ -16,17 +12,19 @@
 </header>
 
 <main>
+  <img src="cso.jpg" alt="CSO" class="logo"> <br> <br>
+  <h2> Current Tickets: </h2>
     <div class="list">
       <table style="width:100%">
         <tr>
+          <th>Department</th>
           <th>Location</th>
-          <th>Category</th>
           <th>Description</th>
         </tr>
       <% tickets.forEach(function (ticket) { %>
           <tr>
+            <td> <%= ticket.department %> </td>
             <td> <%= ticket.location %> </td>
-            <td> <%= ticket.category %> </td>
             <td> <%= ticket.description %> </td>
           </tr>
       <% }) %>

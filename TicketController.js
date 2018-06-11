@@ -37,7 +37,7 @@ var transporter = nodemailer.createTransport({
 router.post('/', upload.single('image'), (req, res, next) => {
       Ticket.create({
           location : req.body.location,
-          category : req.body.category,
+          department : req.body.department,
           description : req.body.description,
           imagePath:  '/public/images/uploads/' + req.file.filename
       },
@@ -46,16 +46,16 @@ router.post('/', upload.single('image'), (req, res, next) => {
           res.status(200).send(ticket);
           // route email to appropriate party based on category
           var rec;
-          if (req.body.category == 'Bearcat Card') {
+          if (req.body.department == 'Parking') {
            rec = 'hoernsbj@mail.uc.edu';
-         } else if (req.body.category == 'Point-of-Sale') {
+         } else if (req.body.department == 'Vending') {
            rec = 'maynaraj@mail.uc.edu';
           }
           // create email
           var mailOptions = {
             from: 'csoreportingapp@gmail.com',
             to: rec,
-            subject: 'CSO Trouble Ticket: ' + req.body.category + ' at ' + req.body.location,
+            subject: 'CSO Trouble Ticket: ' + req.body.department + ' issue at ' + req.body.location,
             html: 'Issue description: ' + req.body.description + '<br><br> <img src="cid:ticket@cso.uc.edu"/>',
             attachments: [{
                 filename: 'image.jpg',
