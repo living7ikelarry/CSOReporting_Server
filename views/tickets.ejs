@@ -20,12 +20,14 @@
           <th>Department</th>
           <th>Location</th>
           <th>Description</th>
+          <th>Ticket ID</th>
         </tr>
       <% tickets.forEach(function (ticket) { %>
           <tr>
             <td> <%= ticket.department %> </td>
             <td> <%= ticket.location %> </td>
             <td> <%= ticket.description %> </td>
+            <td style="width:10px"> <%= ticket._id %> </td>
           </tr>
       <% }) %>
       </table>

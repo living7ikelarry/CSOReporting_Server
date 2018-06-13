@@ -44,13 +44,10 @@ router.post('/', upload.single('image'), (req, res, next) => {
       function (err, ticket) {
           if (err) return res.status(500).send("There was a problem adding the ticket to the database.");
           res.status(200).send(ticket);
-          // route email to appropriate party based on category
+          // route email to appropriate party based on department, try multiple recipients as well
           var rec;
-          if (req.body.department == 'Parking') {
-           rec = 'hoernsbj@mail.uc.edu';
-         } else if (req.body.department == 'Vending') {
-           rec = 'maynaraj@mail.uc.edu';
-          }
+          rec = 'hoernsbj@mail.uc.edu';
+
           // create email
           var mailOptions = {
             from: 'csoreportingapp@gmail.com',
