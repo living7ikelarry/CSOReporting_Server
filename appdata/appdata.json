@@ -1,0 +1,95 @@
+[
+    {
+        "_id": "5b86c12507cc9ac5d568b160",
+        "department": "Parking",
+        "locations": {
+            "CCM": "CCM",
+            "Calhoun": "Calhoun",
+            "Campus Green": "Campus Green",
+            "Clifton Court": "Clifton Court",
+            "Corry": "Corry",
+            "Stratford Heights": "Stratford Heights",
+            "University Avenue": "University Avenue",
+            "Varsity Village": "Varsity Village",
+            "Woodside Avenue": "Woodside Avenue",
+            "Eden": "Eden",
+            "Kingsgate/University Hall": "Kingsgate/University Hall",
+            "Other": "Other"
+        },
+        "input": "locationSel"
+    },
+    {
+        "_id": "5b9a685507cc9ac5d5695c03",
+        "department": "Department",
+        "locations": {
+            "Bearcat Card": "Bearcat Card",
+            "Campus Recreation": "Campus Recreation",
+            "Parking": "Parking",
+            "Vending": "Vending",
+            "Food Services": "Food Services",
+            "CES": "CES"
+        },
+        "input": ""
+    },
+    {
+        "_id": "5b9a702a07cc9ac5d5695e9e",
+        "department": "Food Services",
+        "locations": {
+            "1819 Starbucks Kiosk": "1819 Starbucks Kiosk",
+            "Bleecker St @ UC Blue Ash": "Bleecker St @ UC Blue Ash",
+            "Burger King": "Burger King",
+            "Campus View Cafe": "Campus View Cafe",
+            "Catskeller": "Catskeller",
+            "CenterCourt": "CenterCourt",
+            "Chick-fil-A": "Chick-fil-A",
+            "Classic Fare Catering": "Classic Fare Catering",
+            "College of Business Cafe": "College of Business Cafe",
+            "DAAP Cafe": "DAAP Cafe",
+            "Greens to Go": "Greens to Go",
+            "MarketPointe": "MarketPointe",
+            "Mick & Macks Cafe": "Mick & Macks Cafe",
+            "OTG (On the Green)": "OTG (On the Green)",
+            "Quick Micks": "Quick Micks",
+            "Stadium View Cafe": "Stadium View Cafe",
+            "Starbucks - CCM": "Starbucks - CCM",
+            "Starbucks - Library": "Starbucks - Library",
+            "Starbucks - MSB": "Starbucks - MSB",
+            "Starbucks - SSLC": "Starbucks - SSLC",
+            "Subway - CARE/Crawley": "Subway - CARE/Crawley",
+            "Subway - SSLC": "Subway - SSLC",
+            "Taco Bell": "Taco Bell",
+            "Teachers Cafe": "Teachers Cafe",
+            "Tim Hortons": "Tim Hortons",
+            "TUC Pizza Location": "TUC Pizza Location",
+            "Varsity Club": "Varsity Club",
+            "Victory Parkway Cafe": "Victory Parkway Cafe"
+        },
+        "input": "locationSel"
+    },
+    {
+        "_id": "5b9a99db07cc9ac5d56969d6",
+        "department": "Bearcat Card",
+        "locations": "",
+        "input": "locationTxt"
+    },
+    {
+        "_id": "5b9fbd6707cc9ac5d56b22a4",
+        "department": "Campus Recreation",
+        "locations": {
+            "CRC": "CRC",
+            "Care/Crawley": "Care/Crawley"
+        },
+        "input": "locationSel"
+    },
+    {
+        "_id": "5b9fbe2607cc9ac5d56b22dd",
+        "department": "CES",
+        "locations": {
+            "TUC": "TUC",
+            "SSLC": "SSLC",
+            "West Pavilion": "West Pavilion",
+            "Kingsgate": "Kingsgate"
+        },
+        "input": "locationSel"
+    }
+]
