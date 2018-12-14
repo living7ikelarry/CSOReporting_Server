@@ -88,8 +88,15 @@
             "TUC": "TUC",
             "SSLC": "SSLC",
             "West Pavilion": "West Pavilion",
-            "Kingsgate": "Kingsgate"
+            "Kingsgate": "Kingsgate",
+            "Outdoor - MainStreet": "Outdoor - MainStreet"
         },
         "input": "locationSel"
+    },
+    {
+        "_id" : "5bae6f80f22bb020f9d4a920",
+        "department" : "Vending",
+        "locations" : "",
+        "input" : "locationTxt"
     }
 ]

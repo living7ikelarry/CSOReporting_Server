@@ -4,7 +4,8 @@ var TicketSchema = new mongoose.Schema({
   location: String,
   department: String,
   description: String,
-  imagePath: String
+  imagePath: String,
+  date: Number
 });
 
 mongoose.model('Ticket', TicketSchema, 'tickets');

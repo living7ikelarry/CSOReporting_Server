@@ -19,13 +19,20 @@ const mailLists = {
   cesTS: [
     'Ryan.gaerke@uc.edu',
     'Thomas.bevis@uc.edu',
-    'Jamie.miller2@uc.edu'
+    'Jamie.miller2@uc.edu',
+    'Adam.wiles@uc.edu'
   ],
   cesWP: [
     'Adam.wiles@uc.edu',
     'Jamie.miller2@uc.edu'
   ],
   cesKG: 'Jamie.miller2@uc.edu',
+  cesOut: [
+    'Ryan.gaerke@uc.edu',
+    'Thomas.bevis@uc.edu',
+    'Jamie.miller2@uc.edu',
+    'Adam.wiles@uc.edu'
+  ],
   bearcatcard: [
     'hoernsbj@mail.uc.edu',
     'maynaraj@ucmail.uc.edu',
